@@ -41,10 +41,10 @@ GameClass game;
   private Tetromino currentTetromino;
   private Tetromino nextTetromino;
   private Stage stage;
-  private SpriteBatch batch; // отрисовщик
-  private ShapeRenderer renderer; //отрисовщик для сложных фигур
+  private SpriteBatch batch;
+  private ShapeRenderer renderer;
   private BitmapFont scoreFont;
-  private GameStage gameStage; // окно в котором падают фигуры
+  private GameStage gameStage;
   private int score;
   private SoftKey lastPressedSoftKey;
   private static final int STAGE_START_X = 25;
@@ -81,7 +81,7 @@ GameClass game;
     scoreFont = new BitmapFont();
     scoreFont.setColor(Color.WHITE);
     renderer = new ShapeRenderer();
-    fallingSpeed = 4.5f; // blocks per seconds
+    fallingSpeed = 4.5f;
     gameStage = new GameStage();
     currentTetromino = Tetromino.getInstance();
     nextTetromino = Tetromino.getInstance();
